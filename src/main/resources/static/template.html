@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation de réservation de rendez-vous</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Confirmation de réservation de rendez-vous</h2>
+    <p>Bonjour ${name},</p>
+    <p>Votre rendez-vous a été réservé avec succès. Voici les détails :</p>
+    <table>
+        <tr>
+            <th>Date du rendez-vous</th>
+            <td>${date}</td>
+        </tr>
+        <tr>
+            <th>Centre</th>
+            <td>${center}</td>
+        </tr>
+        <tr>
+            <th>Créneau horaire</th>
+            <td>${heureDebut} - ${heureFin}</td>
+        </tr>
+    </table>
+    <p>Merci de votre confiance !</p>
+    <p>Cordialement,</p>
+    <p>L'équipe de rendez-vous <strong>MyRDV</strong></p>
+</div>
+</body>
+</html>
